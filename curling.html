@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- TODO -->
+
+<html>
+	<head>
+		<title>Assignment 3 - Real-Time Collaboration with Web Sockets</title>
+		<script src="/socket.io/socket.io.js"></script>
+		<style>
+		
+			body {
+        		    background: #dddddd;
+       			}	
+		 	
+			/*element selectors: */
+		 	canvas {
+		    		margin: 10px;	/* CHANGED FROM 20px */
+				/*important here for padding to be 0 for mouse calculations */
+        		    	padding: 0px;
+		 	}
+
+			div {
+				/*overflow-x: scroll;*/
+				white-space: nowrap;
+			}
+		 
+			/* class selectors: */
+		 	.canvas {            
+            			background: #ffffff;
+        	    		border: thin inset #aaaaaa;
+	         	}
+		</style>
+	</head>
+	
+	<body>
+		<div class="div">
+			<!-- NOTE: Aside from looking at it, you cannot interact with the zoomed-in canvas. -->
+			<canvas id="zoom-canvas" class="canvas" width="600" height="600">Zoomed-in Canvas</canvas>
+			<canvas id="main-canvas" class="canvas" width="200" height="600">Main Canvas</canvas>
+		</div>
+		<div class="div">
+			<p>Enter your name:</p>
+			<input type="text" id="nameField" name="nameField" value="" size=32 />
+			<input type="button" value="Join Game (if slot available)" onClick="onJoinGameClicked()" />
+			<input type="button" value="Exit Game (relinquish slot)" onClick="onExitGameClicked()" />
+		</div>
+		<div class="div">
+			<p id="playerOneText">Player One (RED): </p>
+			<p id="playerTwoText">Player Two (YELLOW):  </p>
+			<p id="helpText">When assigned a slot, to shoot a stone of your color: click it, pull back, and release.</p>
+		</div>
+
+		<script src="client.js"></script>
+	</body>
+</html>

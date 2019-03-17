@@ -16,10 +16,10 @@ socket.io
 
 Installing Dependencies
 ------------------------------------------------------------------------------------------
-To install, cd to the same directory as client.js and server.js and enter:
+	To install, cd to the same directory as client.js and server.js and enter:
 		npm install socket.io
 	
-The program was written using socket.io 2.1.1.
+	The program was written using socket.io 2.1.1.
 
 Launching
 ------------------------------------------------------------------------------------------

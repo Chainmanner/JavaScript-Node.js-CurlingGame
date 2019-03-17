@@ -3,11 +3,17 @@
 
 # Project Info
 Author: Gabriel Valachi
+
 Student ID: [REDACTED]
+
 Email: gabriel.valachi2@gmail.com [SCHOOL E-MAIL REDACTED]
+
 Date Written: November 6, 2018
+
 Node.js Version: v8.11.4
+
 OS Tested On: XUbuntu 18.04, 64-bit
+
 Socket.io Version: 2.1.1
 
 Additional Dependencies
